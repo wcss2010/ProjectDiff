@@ -21,7 +21,7 @@ namespace ProjectDiff
         {
             if (ofdExcels.ShowDialog() == DialogResult.OK)
             {
-                DataSet ds = ExcelHelperForCs.ImportFromExcel(ofdExcels.FileName, 1);
+                DataSet ds = ExcelHelper.ExcelToDataSet(ofdExcels.FileName);
                 if (ds != null && ds.Tables.Count >= 1)
                 {
                     foreach (DataTable dt in ds.Tables)
@@ -45,7 +45,7 @@ namespace ProjectDiff
         {
             if (ofdExcels.ShowDialog() == DialogResult.OK)
             {
-                DataSet ds = ExcelHelperForCs.ImportFromExcel(ofdExcels.FileName, 1);
+                DataSet ds = ExcelHelper.ExcelToDataSet(ofdExcels.FileName);
                 if (ds != null && ds.Tables.Count >= 1)
                 {
                     foreach (DataTable dt in ds.Tables)
