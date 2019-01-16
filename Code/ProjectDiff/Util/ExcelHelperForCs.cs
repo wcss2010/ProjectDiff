@@ -10,6 +10,7 @@ using NPOI.XSSF.UserModel;
 using System.IO;
 using System.Threading;
 using NPOI.HSSF.UserModel;
+using System.Diagnostics;
 
 namespace ProjectDiff.Util
 {
@@ -254,13 +255,11 @@ namespace ProjectDiff.Util
             {
                 return;
             }
-
-
+            
             IWorkbook workbook = new XSSFWorkbook();
             ISheet sheet = workbook.CreateSheet(sheetName);
             IRow rowHead = sheet.CreateRow(0);
-
-
+            
             //填写表头
             for (int i = 0; i < data.Columns.Count; i++)
             {
@@ -288,6 +287,8 @@ namespace ProjectDiff.Util
             }
             MessageBox.Show("导出数据成功!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             GC.Collect();
+
+            Process.Start(fileDialog.FileName);
         }
     }
 }
