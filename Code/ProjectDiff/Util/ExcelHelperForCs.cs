@@ -16,6 +16,8 @@ namespace ProjectDiff.Util
 {
     public static class ExcelHelper
     {
+        public static bool EnabledAppendEmptyColumn = false;
+
         public static DataSet ExcelToDataSet(string fileName)
         {
             return ExcelToDataSet(fileName, true);
@@ -95,7 +97,10 @@ namespace ProjectDiff.Util
                     }
                     else
                     {
-                        dt.Columns.Add(string.Format("F{0}", i + 1), typeof(string));
+                        if (EnabledAppendEmptyColumn)
+                        {
+                            dt.Columns.Add(string.Format("F{0}", i + 1), typeof(string));
+                        }
                     }
                 }
 
