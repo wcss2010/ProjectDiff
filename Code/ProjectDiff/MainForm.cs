@@ -77,6 +77,7 @@ namespace ProjectDiff
                 {
                     string workerName = drWorker.Cells[0].Value.ToString();
                     string workerUnit = drWorker.Cells[1].Value.ToString();
+                    string workerGroup = drWorker.Cells[2].Value.ToString();
                     foreach (DataGridViewRow drProject in dgvProjects.Rows)
                     {
                         string projectName = drProject.Cells[0].Value.ToString();
@@ -88,35 +89,35 @@ namespace ProjectDiff
                         string projectWorker3 = drProject.Cells[7].Value.ToString();
 
                         List<string> cells = new List<string>();
-                        if (projectMaster != null && workerName != null && projectMaster.Equals(workerName))
+                        if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
                         {
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是责任导师");
                         }
-                        else if (projectWorker1 != null && workerName != null && projectWorker1.Equals(workerName))
+                        else if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
                         {
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
-                        else if (projectWorker2 != null && workerName != null && projectWorker2.Equals(workerName))
+                        else if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
                         {
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
-                        else if (projectWorker3 != null && workerName != null && projectWorker3.Equals(workerName))
+                        else if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
                         {
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
-                        else if (projectUnit != null && workerUnit != null && projectUnit.Equals(workerUnit))
+                        else if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit.Equals(workerUnit))
                         {
                             cells.Add(projectGroup);
                             cells.Add(projectName);
