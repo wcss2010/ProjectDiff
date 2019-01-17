@@ -31,18 +31,6 @@
             this.nvTabs = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.kpProject = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.dgvProjects = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.plButtons1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btmLoadProjects = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kpWorker = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.dgvWorkers = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.plButtons2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btnLoadWorkers = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kpDiff = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.dgvDiff = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btnStart = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
-            this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
             this.colItem1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItem2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItems3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -51,13 +39,26 @@
             this.colItem6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItem7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItem8 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.plButtons1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.btmLoadProjects = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kpWorker = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.dgvWorkers = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.colItemss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.plButtons2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.btnLoadWorkers = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kpDiff = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.dgvDiff = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnStart = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
+            this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
+            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -92,7 +93,7 @@
             this.kpProject,
             this.kpWorker,
             this.kpDiff});
-            this.nvTabs.SelectedIndex = 2;
+            this.nvTabs.SelectedIndex = 0;
             this.nvTabs.Size = new System.Drawing.Size(823, 523);
             this.nvTabs.TabIndex = 0;
             this.nvTabs.Text = "kryptonNavigator1";
@@ -130,142 +131,6 @@
             this.dgvProjects.RowTemplate.Height = 23;
             this.dgvProjects.Size = new System.Drawing.Size(821, 447);
             this.dgvProjects.TabIndex = 3;
-            // 
-            // plButtons1
-            // 
-            this.plButtons1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plButtons1.Location = new System.Drawing.Point(0, 0);
-            this.plButtons1.Name = "plButtons1";
-            // 
-            // plButtons1.Panel
-            // 
-            this.plButtons1.Panel.Controls.Add(this.btmLoadProjects);
-            this.plButtons1.Size = new System.Drawing.Size(821, 49);
-            this.plButtons1.TabIndex = 2;
-            this.plButtons1.Values.Heading = "";
-            // 
-            // btmLoadProjects
-            // 
-            this.btmLoadProjects.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btmLoadProjects.Location = new System.Drawing.Point(706, 0);
-            this.btmLoadProjects.Name = "btmLoadProjects";
-            this.btmLoadProjects.Size = new System.Drawing.Size(111, 43);
-            this.btmLoadProjects.TabIndex = 0;
-            this.btmLoadProjects.Values.Text = "载入项目信息";
-            this.btmLoadProjects.Click += new System.EventHandler(this.btmLoadProjects_Click);
-            // 
-            // kpWorker
-            // 
-            this.kpWorker.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kpWorker.Controls.Add(this.dgvWorkers);
-            this.kpWorker.Controls.Add(this.plButtons2);
-            this.kpWorker.Flags = 65534;
-            this.kpWorker.LastVisibleSet = true;
-            this.kpWorker.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kpWorker.Name = "kpWorker";
-            this.kpWorker.Size = new System.Drawing.Size(821, 496);
-            this.kpWorker.Text = "评审专家信息";
-            this.kpWorker.ToolTipTitle = "Page ToolTip";
-            this.kpWorker.UniqueName = "C433756FA1B5481A3D9643875B24FA6A";
-            // 
-            // dgvWorkers
-            // 
-            this.dgvWorkers.AllowUserToAddRows = false;
-            this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colItemss1,
-            this.colItemss2,
-            this.colItemss3});
-            this.dgvWorkers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvWorkers.Location = new System.Drawing.Point(0, 49);
-            this.dgvWorkers.Name = "dgvWorkers";
-            this.dgvWorkers.RowTemplate.Height = 23;
-            this.dgvWorkers.Size = new System.Drawing.Size(821, 447);
-            this.dgvWorkers.TabIndex = 3;
-            // 
-            // plButtons2
-            // 
-            this.plButtons2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plButtons2.Location = new System.Drawing.Point(0, 0);
-            this.plButtons2.Name = "plButtons2";
-            // 
-            // plButtons2.Panel
-            // 
-            this.plButtons2.Panel.Controls.Add(this.btnLoadWorkers);
-            this.plButtons2.Size = new System.Drawing.Size(821, 49);
-            this.plButtons2.TabIndex = 2;
-            this.plButtons2.Values.Heading = "";
-            // 
-            // btnLoadWorkers
-            // 
-            this.btnLoadWorkers.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLoadWorkers.Location = new System.Drawing.Point(727, 0);
-            this.btnLoadWorkers.Name = "btnLoadWorkers";
-            this.btnLoadWorkers.Size = new System.Drawing.Size(90, 43);
-            this.btnLoadWorkers.TabIndex = 0;
-            this.btnLoadWorkers.Values.Text = "载入专家信息";
-            this.btnLoadWorkers.Click += new System.EventHandler(this.btnLoadWorkers_Click);
-            // 
-            // kpDiff
-            // 
-            this.kpDiff.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kpDiff.Controls.Add(this.dgvDiff);
-            this.kpDiff.Controls.Add(this.plButtons3);
-            this.kpDiff.Flags = 65534;
-            this.kpDiff.LastVisibleSet = true;
-            this.kpDiff.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kpDiff.Name = "kpDiff";
-            this.kpDiff.Size = new System.Drawing.Size(821, 496);
-            this.kpDiff.Text = "功能比对";
-            this.kpDiff.ToolTipTitle = "Page ToolTip";
-            this.kpDiff.UniqueName = "26E920A4234742D5F6980439F1F5717B";
-            // 
-            // dgvDiff
-            // 
-            this.dgvDiff.AllowUserToAddRows = false;
-            this.dgvDiff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colItemsss1,
-            this.colItemsss2,
-            this.colItemsss3});
-            this.dgvDiff.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDiff.Location = new System.Drawing.Point(0, 49);
-            this.dgvDiff.Name = "dgvDiff";
-            this.dgvDiff.RowTemplate.Height = 23;
-            this.dgvDiff.Size = new System.Drawing.Size(821, 447);
-            this.dgvDiff.TabIndex = 1;
-            // 
-            // plButtons3
-            // 
-            this.plButtons3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plButtons3.Location = new System.Drawing.Point(0, 0);
-            this.plButtons3.Name = "plButtons3";
-            // 
-            // plButtons3.Panel
-            // 
-            this.plButtons3.Panel.Controls.Add(this.btnExportTo);
-            this.plButtons3.Panel.Controls.Add(this.btnStart);
-            this.plButtons3.Size = new System.Drawing.Size(821, 49);
-            this.plButtons3.TabIndex = 0;
-            this.plButtons3.Values.Heading = "";
-            // 
-            // btnStart
-            // 
-            this.btnStart.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnStart.Location = new System.Drawing.Point(750, 0);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(67, 43);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Values.Text = "开始比对";
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // ofdExcels
-            // 
-            this.ofdExcels.Filter = "*.xlsx|*.xlsx";
-            // 
-            // sfdExcels
-            // 
-            this.sfdExcels.FileName = "*.xlsx|*.xlsx";
             // 
             // colItem1
             // 
@@ -331,6 +196,58 @@
             this.colItem8.ReadOnly = true;
             this.colItem8.Width = 97;
             // 
+            // plButtons1
+            // 
+            this.plButtons1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plButtons1.Location = new System.Drawing.Point(0, 0);
+            this.plButtons1.Name = "plButtons1";
+            // 
+            // plButtons1.Panel
+            // 
+            this.plButtons1.Panel.Controls.Add(this.btmLoadProjects);
+            this.plButtons1.Size = new System.Drawing.Size(821, 49);
+            this.plButtons1.TabIndex = 2;
+            this.plButtons1.Values.Heading = "";
+            // 
+            // btmLoadProjects
+            // 
+            this.btmLoadProjects.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btmLoadProjects.Location = new System.Drawing.Point(706, 0);
+            this.btmLoadProjects.Name = "btmLoadProjects";
+            this.btmLoadProjects.Size = new System.Drawing.Size(111, 43);
+            this.btmLoadProjects.TabIndex = 0;
+            this.btmLoadProjects.Values.Text = "载入项目信息";
+            this.btmLoadProjects.Click += new System.EventHandler(this.btmLoadProjects_Click);
+            // 
+            // kpWorker
+            // 
+            this.kpWorker.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kpWorker.Controls.Add(this.dgvWorkers);
+            this.kpWorker.Controls.Add(this.plButtons2);
+            this.kpWorker.Flags = 65534;
+            this.kpWorker.LastVisibleSet = true;
+            this.kpWorker.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kpWorker.Name = "kpWorker";
+            this.kpWorker.Size = new System.Drawing.Size(821, 496);
+            this.kpWorker.Text = "评审专家信息";
+            this.kpWorker.ToolTipTitle = "Page ToolTip";
+            this.kpWorker.UniqueName = "C433756FA1B5481A3D9643875B24FA6A";
+            // 
+            // dgvWorkers
+            // 
+            this.dgvWorkers.AllowUserToAddRows = false;
+            this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colItemss1,
+            this.colItemss2,
+            this.colItemss3});
+            this.dgvWorkers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvWorkers.Location = new System.Drawing.Point(0, 49);
+            this.dgvWorkers.Name = "dgvWorkers";
+            this.dgvWorkers.RowTemplate.Height = 23;
+            this.dgvWorkers.Size = new System.Drawing.Size(821, 447);
+            this.dgvWorkers.TabIndex = 3;
+            // 
             // colItemss1
             // 
             this.colItemss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -355,6 +272,109 @@
             this.colItemss3.ReadOnly = true;
             this.colItemss3.Width = 260;
             // 
+            // plButtons2
+            // 
+            this.plButtons2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plButtons2.Location = new System.Drawing.Point(0, 0);
+            this.plButtons2.Name = "plButtons2";
+            // 
+            // plButtons2.Panel
+            // 
+            this.plButtons2.Panel.Controls.Add(this.btnLoadWorkers);
+            this.plButtons2.Size = new System.Drawing.Size(821, 49);
+            this.plButtons2.TabIndex = 2;
+            this.plButtons2.Values.Heading = "";
+            // 
+            // btnLoadWorkers
+            // 
+            this.btnLoadWorkers.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLoadWorkers.Location = new System.Drawing.Point(727, 0);
+            this.btnLoadWorkers.Name = "btnLoadWorkers";
+            this.btnLoadWorkers.Size = new System.Drawing.Size(90, 43);
+            this.btnLoadWorkers.TabIndex = 0;
+            this.btnLoadWorkers.Values.Text = "载入专家信息";
+            this.btnLoadWorkers.Click += new System.EventHandler(this.btnLoadWorkers_Click);
+            // 
+            // kpDiff
+            // 
+            this.kpDiff.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kpDiff.Controls.Add(this.dgvDiff);
+            this.kpDiff.Controls.Add(this.plButtons3);
+            this.kpDiff.Flags = 65534;
+            this.kpDiff.LastVisibleSet = true;
+            this.kpDiff.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kpDiff.Name = "kpDiff";
+            this.kpDiff.Size = new System.Drawing.Size(821, 496);
+            this.kpDiff.Text = "功能比对";
+            this.kpDiff.ToolTipTitle = "Page ToolTip";
+            this.kpDiff.UniqueName = "26E920A4234742D5F6980439F1F5717B";
+            // 
+            // dgvDiff
+            // 
+            this.dgvDiff.AllowUserToAddRows = false;
+            this.dgvDiff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDiff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colItemsss6,
+            this.colItemsss1,
+            this.colItemsss2,
+            this.colItemsss3});
+            this.dgvDiff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDiff.Location = new System.Drawing.Point(0, 49);
+            this.dgvDiff.Name = "dgvDiff";
+            this.dgvDiff.RowTemplate.Height = 23;
+            this.dgvDiff.Size = new System.Drawing.Size(821, 447);
+            this.dgvDiff.TabIndex = 1;
+            // 
+            // plButtons3
+            // 
+            this.plButtons3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plButtons3.Location = new System.Drawing.Point(0, 0);
+            this.plButtons3.Name = "plButtons3";
+            // 
+            // plButtons3.Panel
+            // 
+            this.plButtons3.Panel.Controls.Add(this.btnExportTo);
+            this.plButtons3.Panel.Controls.Add(this.btnStart);
+            this.plButtons3.Size = new System.Drawing.Size(821, 49);
+            this.plButtons3.TabIndex = 0;
+            this.plButtons3.Values.Heading = "";
+            // 
+            // btnExportTo
+            // 
+            this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExportTo.Location = new System.Drawing.Point(660, 0);
+            this.btnExportTo.Name = "btnExportTo";
+            this.btnExportTo.Size = new System.Drawing.Size(90, 43);
+            this.btnExportTo.TabIndex = 1;
+            this.btnExportTo.Values.Text = "导出到Excel";
+            this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnStart.Location = new System.Drawing.Point(750, 0);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(67, 43);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Values.Text = "开始比对";
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // ofdExcels
+            // 
+            this.ofdExcels.Filter = "*.xlsx|*.xlsx";
+            // 
+            // sfdExcels
+            // 
+            this.sfdExcels.FileName = "*.xlsx|*.xlsx";
+            // 
+            // colItemsss6
+            // 
+            this.colItemsss6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss6.HeaderText = "分组";
+            this.colItemsss6.Name = "colItemsss6";
+            this.colItemsss6.ReadOnly = true;
+            this.colItemsss6.Width = 60;
+            // 
             // colItemsss1
             // 
             this.colItemsss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -377,17 +397,7 @@
             this.colItemsss3.HeaderText = "原因";
             this.colItemsss3.Name = "colItemsss3";
             this.colItemsss3.ReadOnly = true;
-            this.colItemsss3.Width = 660;
-            // 
-            // btnExportTo
-            // 
-            this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExportTo.Location = new System.Drawing.Point(660, 0);
-            this.btnExportTo.Name = "btnExportTo";
-            this.btnExportTo.Size = new System.Drawing.Size(90, 43);
-            this.btnExportTo.TabIndex = 1;
-            this.btnExportTo.Values.Text = "导出到Excel";
-            this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
+            this.colItemsss3.Width = 600;
             // 
             // MainForm
             // 
@@ -454,10 +464,11 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnExportTo;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss6;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnExportTo;
     }
 }
 

@@ -81,6 +81,7 @@ namespace ProjectDiff
                     {
                         string projectName = drProject.Cells[0].Value.ToString();
                         string projectUnit = drProject.Cells[2].Value.ToString();
+                        string projectGroup = drProject.Cells[3].Value.ToString();
                         string projectMaster = drProject.Cells[4].Value.ToString();
                         string projectWorker1 = drProject.Cells[5].Value.ToString();
                         string projectWorker2 = drProject.Cells[6].Value.ToString();
@@ -89,30 +90,35 @@ namespace ProjectDiff
                         List<string> cells = new List<string>();
                         if (projectMaster != null && workerName != null && projectMaster.Equals(workerName))
                         {
+                            cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是责任导师");
                         }
                         else if (projectWorker1 != null && workerName != null && projectWorker1.Equals(workerName))
                         {
+                            cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
                         else if (projectWorker2 != null && workerName != null && projectWorker2.Equals(workerName))
                         {
+                            cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
                         else if (projectWorker3 != null && workerName != null && projectWorker3.Equals(workerName))
                         {
+                            cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("评审专家是推荐专家");
                         }
                         else if (projectUnit != null && workerUnit != null && projectUnit.Equals(workerUnit))
                         {
+                            cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
                             cells.Add("申请单位与评审专家单位相同");
