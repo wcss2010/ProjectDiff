@@ -50,15 +50,15 @@
             this.btnLoadWorkers = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kpDiff = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.dgvDiff = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnStart = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
-            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -325,6 +325,38 @@
             this.dgvDiff.Size = new System.Drawing.Size(821, 447);
             this.dgvDiff.TabIndex = 1;
             // 
+            // colItemsss6
+            // 
+            this.colItemsss6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss6.HeaderText = "分组";
+            this.colItemsss6.Name = "colItemsss6";
+            this.colItemsss6.ReadOnly = true;
+            this.colItemsss6.Width = 60;
+            // 
+            // colItemsss1
+            // 
+            this.colItemsss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss1.HeaderText = "项目";
+            this.colItemsss1.Name = "colItemsss1";
+            this.colItemsss1.ReadOnly = true;
+            this.colItemsss1.Width = 60;
+            // 
+            // colItemsss2
+            // 
+            this.colItemsss2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss2.HeaderText = "专家";
+            this.colItemsss2.Name = "colItemsss2";
+            this.colItemsss2.ReadOnly = true;
+            this.colItemsss2.Width = 60;
+            // 
+            // colItemsss3
+            // 
+            this.colItemsss3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colItemsss3.HeaderText = "原因";
+            this.colItemsss3.Name = "colItemsss3";
+            this.colItemsss3.ReadOnly = true;
+            this.colItemsss3.Width = 600;
+            // 
             // plButtons3
             // 
             this.plButtons3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -367,38 +399,6 @@
             // 
             this.sfdExcels.FileName = "*.xlsx|*.xlsx";
             // 
-            // colItemsss6
-            // 
-            this.colItemsss6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss6.HeaderText = "分组";
-            this.colItemsss6.Name = "colItemsss6";
-            this.colItemsss6.ReadOnly = true;
-            this.colItemsss6.Width = 60;
-            // 
-            // colItemsss1
-            // 
-            this.colItemsss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss1.HeaderText = "项目";
-            this.colItemsss1.Name = "colItemsss1";
-            this.colItemsss1.ReadOnly = true;
-            this.colItemsss1.Width = 60;
-            // 
-            // colItemsss2
-            // 
-            this.colItemsss2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss2.HeaderText = "专家";
-            this.colItemsss2.Name = "colItemsss2";
-            this.colItemsss2.ReadOnly = true;
-            this.colItemsss2.Width = 60;
-            // 
-            // colItemsss3
-            // 
-            this.colItemsss3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colItemsss3.HeaderText = "原因";
-            this.colItemsss3.Name = "colItemsss3";
-            this.colItemsss3.ReadOnly = true;
-            this.colItemsss3.Width = 600;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -408,7 +408,7 @@
             this.DoubleBuffered = true;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "专家信息比对";
+            this.Text = "专家信息比对  ";
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).EndInit();
             this.nvTabs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).EndInit();
