@@ -138,6 +138,7 @@ namespace ProjectDiff
                 }
             }
 
+            dgvDiff.Sort(colItemsss1, ListSortDirection.Descending);
         }
 
         private void btnExportTo_Click(object sender, EventArgs e)
