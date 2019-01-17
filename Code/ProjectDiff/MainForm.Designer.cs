@@ -86,6 +86,7 @@
             // 
             // nvTabs
             // 
+            this.nvTabs.Button.CloseButtonDisplay = ComponentFactory.Krypton.Navigator.ButtonDisplay.Hide;
             this.nvTabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nvTabs.Location = new System.Drawing.Point(0, 0);
             this.nvTabs.Name = "nvTabs";
@@ -131,6 +132,8 @@
             this.dgvProjects.RowTemplate.Height = 23;
             this.dgvProjects.Size = new System.Drawing.Size(821, 447);
             this.dgvProjects.TabIndex = 3;
+            this.dgvProjects.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvProjects_RowPostPaint);
+            this.dgvProjects.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvProjects_RowsAdded);
             // 
             // colItem1
             // 
@@ -247,6 +250,8 @@
             this.dgvWorkers.RowTemplate.Height = 23;
             this.dgvWorkers.Size = new System.Drawing.Size(821, 447);
             this.dgvWorkers.TabIndex = 3;
+            this.dgvWorkers.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvWorkers_RowPostPaint);
+            this.dgvWorkers.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvWorkers_RowsAdded);
             // 
             // colItemss1
             // 
@@ -324,6 +329,8 @@
             this.dgvDiff.RowTemplate.Height = 23;
             this.dgvDiff.Size = new System.Drawing.Size(821, 447);
             this.dgvDiff.TabIndex = 1;
+            this.dgvDiff.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvDiff_RowPostPaint);
+            this.dgvDiff.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvDiff_RowsAdded);
             // 
             // colItemsss6
             // 
