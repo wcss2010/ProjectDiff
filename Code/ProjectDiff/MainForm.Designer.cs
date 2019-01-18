@@ -53,12 +53,17 @@
             this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnStart = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnStartForFull = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
+            this.txtCheckLine = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -322,6 +327,7 @@
             this.colItemsss6,
             this.colItemsss1,
             this.colItemsss2,
+            this.colItemsss7,
             this.colItemsss3});
             this.dgvDiff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDiff.Location = new System.Drawing.Point(0, 49);
@@ -356,13 +362,21 @@
             this.colItemsss2.ReadOnly = true;
             this.colItemsss2.Width = 60;
             // 
+            // colItemsss7
+            // 
+            this.colItemsss7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss7.HeaderText = "相似度";
+            this.colItemsss7.Name = "colItemsss7";
+            this.colItemsss7.ReadOnly = true;
+            this.colItemsss7.Width = 72;
+            // 
             // colItemsss3
             // 
             this.colItemsss3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colItemsss3.HeaderText = "原因";
             this.colItemsss3.Name = "colItemsss3";
             this.colItemsss3.ReadOnly = true;
-            this.colItemsss3.Width = 600;
+            this.colItemsss3.Width = 528;
             // 
             // plButtons3
             // 
@@ -372,31 +386,45 @@
             // 
             // plButtons3.Panel
             // 
+            this.plButtons3.Panel.Controls.Add(this.kryptonLabel2);
+            this.plButtons3.Panel.Controls.Add(this.kryptonLabel1);
+            this.plButtons3.Panel.Controls.Add(this.txtCheckLine);
             this.plButtons3.Panel.Controls.Add(this.btnExportTo);
-            this.plButtons3.Panel.Controls.Add(this.btnStart);
+            this.plButtons3.Panel.Controls.Add(this.btnStartForFull);
+            this.plButtons3.Panel.Controls.Add(this.btnStartForLike);
             this.plButtons3.Size = new System.Drawing.Size(821, 49);
             this.plButtons3.TabIndex = 0;
             this.plButtons3.Values.Heading = "";
             // 
+            // btnStartForLike
+            // 
+            this.btnStartForLike.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnStartForLike.Location = new System.Drawing.Point(727, 0);
+            this.btnStartForLike.Name = "btnStartForLike";
+            this.btnStartForLike.Size = new System.Drawing.Size(90, 43);
+            this.btnStartForLike.TabIndex = 2;
+            this.btnStartForLike.Values.Text = "单位模糊匹配";
+            this.btnStartForLike.Click += new System.EventHandler(this.btnStartForLike_Click);
+            // 
             // btnExportTo
             // 
             this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExportTo.Location = new System.Drawing.Point(660, 0);
+            this.btnExportTo.Location = new System.Drawing.Point(540, 0);
             this.btnExportTo.Name = "btnExportTo";
             this.btnExportTo.Size = new System.Drawing.Size(90, 43);
             this.btnExportTo.TabIndex = 1;
             this.btnExportTo.Values.Text = "导出到Excel";
             this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
             // 
-            // btnStart
+            // btnStartForFull
             // 
-            this.btnStart.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnStart.Location = new System.Drawing.Point(750, 0);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(67, 43);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Values.Text = "开始比对";
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStartForFull.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnStartForFull.Location = new System.Drawing.Point(630, 0);
+            this.btnStartForFull.Name = "btnStartForFull";
+            this.btnStartForFull.Size = new System.Drawing.Size(97, 43);
+            this.btnStartForFull.TabIndex = 0;
+            this.btnStartForFull.Values.Text = "全部精确匹配";
+            this.btnStartForFull.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // ofdExcels
             // 
@@ -405,6 +433,34 @@
             // sfdExcels
             // 
             this.sfdExcels.FileName = "*.xlsx|*.xlsx";
+            // 
+            // txtCheckLine
+            // 
+            this.txtCheckLine.Location = new System.Drawing.Point(144, 10);
+            this.txtCheckLine.Name = "txtCheckLine";
+            this.txtCheckLine.Size = new System.Drawing.Size(46, 22);
+            this.txtCheckLine.TabIndex = 3;
+            this.txtCheckLine.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(5, 11);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(135, 20);
+            this.kryptonLabel1.TabIndex = 4;
+            this.kryptonLabel1.Values.Text = "模糊匹配相似度阀值：";
+            // 
+            // kryptonLabel2
+            // 
+            this.kryptonLabel2.Location = new System.Drawing.Point(193, 10);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(21, 20);
+            this.kryptonLabel2.TabIndex = 4;
+            this.kryptonLabel2.Values.Text = "%";
             // 
             // MainForm
             // 
@@ -437,6 +493,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plButtons3.Panel)).EndInit();
             this.plButtons3.Panel.ResumeLayout(false);
+            this.plButtons3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.plButtons3)).EndInit();
             this.plButtons3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -451,7 +508,7 @@
         private ComponentFactory.Krypton.Navigator.KryptonPage kpDiff;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvDiff;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox plButtons3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStart;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForFull;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvWorkers;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox plButtons2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnLoadWorkers;
@@ -475,7 +532,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss6;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss2;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss7;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForLike;
+        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown txtCheckLine;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
     }
 }
 

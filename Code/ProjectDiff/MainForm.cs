@@ -100,6 +100,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
+                        cells.Add("100%");
                         cells.Add("评审专家是责任导师");
                     }
                     else if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
@@ -107,6 +108,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
+                        cells.Add("100%");
                         cells.Add("评审专家是推荐专家");
                     }
                     else if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
@@ -114,6 +116,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
+                        cells.Add("100%");
                         cells.Add("评审专家是推荐专家");
                     }
                     else if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
@@ -121,6 +124,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
+                        cells.Add("100%");
                         cells.Add("评审专家是推荐专家");
                     }
                     else if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit.Equals(workerUnit))
@@ -128,6 +132,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
+                        cells.Add("100%");
                         cells.Add("申请单位与评审专家单位相同");
                     }
 
@@ -232,6 +237,44 @@ namespace ProjectDiff
 
             var headerBounds = new Rectangle(e.RowBounds.Left, e.RowBounds.Top, grid.RowHeadersWidth, e.RowBounds.Height);
             e.Graphics.DrawString(rowIdx, this.Font, SystemBrushes.ControlText, headerBounds, centerFormat);
+        }
+
+        private void btnStartForLike_Click(object sender, EventArgs e)
+        {
+            StringCompute stringCompute = new StringCompute();
+
+            dgvDiff.Rows.Clear();
+            foreach (DataGridViewRow drWorker in dgvWorkers.Rows)
+            {
+                string workerName = drWorker.Cells[0].Value.ToString();
+                string workerUnit = drWorker.Cells[1].Value.ToString();
+                string workerGroup = drWorker.Cells[2].Value.ToString();
+                foreach (DataGridViewRow drProject in dgvProjects.Rows)
+                {
+                    string projectName = drProject.Cells[0].Value.ToString();
+                    string projectUnit = drProject.Cells[2].Value.ToString();
+                    string projectGroup = drProject.Cells[3].Value.ToString();
+                    string projectMaster = drProject.Cells[4].Value.ToString();
+                    string projectWorker1 = drProject.Cells[5].Value.ToString();
+                    string projectWorker2 = drProject.Cells[6].Value.ToString();
+                    string projectWorker3 = drProject.Cells[7].Value.ToString();
+
+                    List<object> cells = new List<object>();
+                    if (workerGroup != null && projectGroup != null && projectGroup.Equals(workerGroup))
+                    {
+                        stringCompute.SpeedyCompute(workerUnit, projectUnit);    // 计算相似度， 不记录比较时间
+                        int rate = (int)(stringCompute.ComputeResult.Rate * 100);         // 相似度百分之几，完全匹配相似度为1
+
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add(rate + "%");
+                        cells.Add("评审专家单位(" +  workerUnit+ ")与项目单位(" +  projectUnit+ ")相似度为" + rate + "%");
+
+                        dgvDiff.Rows.Add(cells.ToArray());
+                    }
+                }
+            }
         }
     }
 }
