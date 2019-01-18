@@ -265,13 +265,16 @@ namespace ProjectDiff
                         stringCompute.SpeedyCompute(workerUnit, projectUnit);    // 计算相似度， 不记录比较时间
                         int rate = (int)(stringCompute.ComputeResult.Rate * 100);         // 相似度百分之几，完全匹配相似度为1
 
-                        cells.Add(projectGroup);
-                        cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add(rate + "%");
-                        cells.Add("评审专家单位(" +  workerUnit+ ")与项目单位(" +  projectUnit+ ")相似度为" + rate + "%");
+                        if (rate >= txtCheckLine.Value)
+                        {
+                            cells.Add(projectGroup);
+                            cells.Add(projectName);
+                            cells.Add(workerName);
+                            cells.Add(rate + "%");
+                            cells.Add("评审专家单位(" + workerUnit + ")与项目单位(" + projectUnit + ")相似度为" + rate + "%");
 
-                        dgvDiff.Rows.Add(cells.ToArray());
+                            dgvDiff.Rows.Add(cells.ToArray());
+                        }
                     }
                 }
             }
