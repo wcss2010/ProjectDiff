@@ -34,10 +34,28 @@ namespace ProjectDiff
                                 continue;
                             }
 
-                            dgvProjects.Rows.Add(dr.ItemArray);
+                            if (dr.ItemArray != null)
+                            {
+                                //统计空格次数
+                                int emptyCount = 0;
+                                foreach (object o in dr.ItemArray)
+                                {
+                                    if (o == null || o == "")
+                                    {
+                                        emptyCount++;
+                                    }
+                                }
+
+                                if (emptyCount < dr.ItemArray.Length)
+                                {
+                                    dgvProjects.Rows.Add(dr.ItemArray);
+                                }
+                            }
                         }
                         break;
                     }
+
+                    MessageBox.Show("导入完成！");
                 }
                 else
                 {
@@ -62,12 +80,30 @@ namespace ProjectDiff
                             {
                                 continue;
                             }
+                            
+                            if (dr.ItemArray != null)
+                            {
+                                //统计空格次数
+                                int emptyCount = 0;
+                                foreach (object o in dr.ItemArray)
+                                {
+                                    if (o == null || o == "")
+                                    {
+                                        emptyCount++;
+                                    }
+                                }
 
-                            dgvWorkers.Rows.Add(dr.ItemArray);
+                                if (emptyCount < dr.ItemArray.Length)
+                                {
+                                    dgvWorkers.Rows.Add(dr.ItemArray);
+                                }
+                            }
                         }
 
                         break;
                     }
+
+                    MessageBox.Show("导入完成！");
                 }
                 else
                 {
