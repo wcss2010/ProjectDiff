@@ -40,7 +40,7 @@ namespace ProjectDiff
                                 int emptyCount = 0;
                                 foreach (object o in dr.ItemArray)
                                 {
-                                    if (o == null || o == "")
+                                    if (o == null || o.ToString() == "")
                                     {
                                         emptyCount++;
                                     }
@@ -87,7 +87,7 @@ namespace ProjectDiff
                                 int emptyCount = 0;
                                 foreach (object o in dr.ItemArray)
                                 {
-                                    if (o == null || o == "")
+                                    if (o == null || o.ToString() == "")
                                     {
                                         emptyCount++;
                                     }
