@@ -56,14 +56,14 @@
             this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.txtCheckLine = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnStartForFull = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
-            this.txtCheckLine = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -99,7 +99,7 @@
             this.kpProject,
             this.kpWorker,
             this.kpDiff});
-            this.nvTabs.SelectedIndex = 0;
+            this.nvTabs.SelectedIndex = 2;
             this.nvTabs.Size = new System.Drawing.Size(823, 523);
             this.nvTabs.TabIndex = 0;
             this.nvTabs.Text = "kryptonNavigator1";
@@ -396,15 +396,33 @@
             this.plButtons3.TabIndex = 0;
             this.plButtons3.Values.Heading = "";
             // 
-            // btnStartForLike
+            // kryptonLabel2
             // 
-            this.btnStartForLike.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnStartForLike.Location = new System.Drawing.Point(727, 0);
-            this.btnStartForLike.Name = "btnStartForLike";
-            this.btnStartForLike.Size = new System.Drawing.Size(90, 43);
-            this.btnStartForLike.TabIndex = 2;
-            this.btnStartForLike.Values.Text = "单位模糊匹配";
-            this.btnStartForLike.Click += new System.EventHandler(this.btnStartForLike_Click);
+            this.kryptonLabel2.Location = new System.Drawing.Point(193, 10);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(21, 20);
+            this.kryptonLabel2.TabIndex = 4;
+            this.kryptonLabel2.Values.Text = "%";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(5, 11);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(135, 20);
+            this.kryptonLabel1.TabIndex = 4;
+            this.kryptonLabel1.Values.Text = "模糊匹配相似度阀值：";
+            // 
+            // txtCheckLine
+            // 
+            this.txtCheckLine.Location = new System.Drawing.Point(144, 10);
+            this.txtCheckLine.Name = "txtCheckLine";
+            this.txtCheckLine.Size = new System.Drawing.Size(46, 22);
+            this.txtCheckLine.TabIndex = 3;
+            this.txtCheckLine.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
             // 
             // btnExportTo
             // 
@@ -426,6 +444,16 @@
             this.btnStartForFull.Values.Text = "全部精确匹配";
             this.btnStartForFull.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // btnStartForLike
+            // 
+            this.btnStartForLike.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnStartForLike.Location = new System.Drawing.Point(727, 0);
+            this.btnStartForLike.Name = "btnStartForLike";
+            this.btnStartForLike.Size = new System.Drawing.Size(90, 43);
+            this.btnStartForLike.TabIndex = 2;
+            this.btnStartForLike.Values.Text = "单位模糊匹配";
+            this.btnStartForLike.Click += new System.EventHandler(this.btnStartForLike_Click);
+            // 
             // ofdExcels
             // 
             this.ofdExcels.Filter = "*.xlsx|*.xlsx";
@@ -433,34 +461,6 @@
             // sfdExcels
             // 
             this.sfdExcels.FileName = "*.xlsx|*.xlsx";
-            // 
-            // txtCheckLine
-            // 
-            this.txtCheckLine.Location = new System.Drawing.Point(144, 10);
-            this.txtCheckLine.Name = "txtCheckLine";
-            this.txtCheckLine.Size = new System.Drawing.Size(46, 22);
-            this.txtCheckLine.TabIndex = 3;
-            this.txtCheckLine.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(5, 11);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(135, 20);
-            this.kryptonLabel1.TabIndex = 4;
-            this.kryptonLabel1.Values.Text = "模糊匹配相似度阀值：";
-            // 
-            // kryptonLabel2
-            // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(193, 10);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(21, 20);
-            this.kryptonLabel2.TabIndex = 4;
-            this.kryptonLabel2.Values.Text = "%";
             // 
             // MainForm
             // 
