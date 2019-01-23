@@ -37,19 +37,24 @@ namespace ProjectDiff
 
                             if (dr.ItemArray != null)
                             {
+                                List<string> cells = new List<string>();
+
                                 //统计空格次数
                                 int emptyCount = 0;
                                 foreach (object o in dr.ItemArray)
                                 {
-                                    if (o == null || o.ToString() == "")
+                                    string val = o != null ? o.ToString().Trim().Replace(" ", string.Empty) : string.Empty;
+                                    if (string.IsNullOrEmpty(val))
                                     {
                                         emptyCount++;
                                     }
+
+                                    cells.Add(val);
                                 }
 
-                                if (emptyCount < dr.ItemArray.Length)
+                                if (emptyCount < cells.Count)
                                 {
-                                    dgvProjects.Rows.Add(dr.ItemArray);
+                                    dgvProjects.Rows.Add(cells.ToArray());
                                 }
                             }
                         }
@@ -84,19 +89,24 @@ namespace ProjectDiff
                             
                             if (dr.ItemArray != null)
                             {
+                                List<string> cells = new List<string>();
+
                                 //统计空格次数
                                 int emptyCount = 0;
                                 foreach (object o in dr.ItemArray)
                                 {
-                                    if (o == null || o.ToString() == "")
+                                    string val = o != null ? o.ToString().Trim().Replace(" ", string.Empty) : string.Empty;
+                                    if (string.IsNullOrEmpty(val))
                                     {
                                         emptyCount++;
                                     }
+
+                                    cells.Add(val);
                                 }
 
-                                if (emptyCount < dr.ItemArray.Length)
+                                if (emptyCount < cells.Count)
                                 {
-                                    dgvWorkers.Rows.Add(dr.ItemArray);
+                                    dgvWorkers.Rows.Add(cells.ToArray());
                                 }
                             }
                         }

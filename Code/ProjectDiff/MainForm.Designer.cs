@@ -99,7 +99,7 @@
             this.kpProject,
             this.kpWorker,
             this.kpDiff});
-            this.nvTabs.SelectedIndex = 2;
+            this.nvTabs.SelectedIndex = 0;
             this.nvTabs.Size = new System.Drawing.Size(823, 523);
             this.nvTabs.TabIndex = 0;
             this.nvTabs.Text = "kryptonNavigator1";
