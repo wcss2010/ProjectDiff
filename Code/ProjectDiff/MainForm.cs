@@ -135,6 +135,7 @@ namespace ProjectDiff
                 foreach (DataGridViewRow drProject in dgvProjects.Rows)
                 {
                     string projectName = drProject.Cells[0].Value.ToString();
+                    string projectCreater = drProject.Cells[1].Value.ToString();
                     string projectUnit = drProject.Cells[2].Value.ToString();
                     string projectGroup = drProject.Cells[3].Value.ToString();
                     string projectMaster = drProject.Cells[4].Value != null ? (string.IsNullOrEmpty(drProject.Cells[4].Value.ToString()) ? null : drProject.Cells[4].Value.ToString()) : null;
@@ -145,6 +146,8 @@ namespace ProjectDiff
                     if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
                     {
                         List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
@@ -157,6 +160,8 @@ namespace ProjectDiff
                     if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
                     {
                         List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
@@ -169,6 +174,8 @@ namespace ProjectDiff
                     if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
                     {
                         List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
@@ -181,6 +188,8 @@ namespace ProjectDiff
                     if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
                     {
                         List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
@@ -193,6 +202,8 @@ namespace ProjectDiff
                     if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit.Equals(workerUnit))
                     {
                         List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
@@ -348,6 +359,7 @@ namespace ProjectDiff
                 foreach (DataGridViewRow drProject in dgvProjects.Rows)
                 {
                     string projectName = drProject.Cells[0].Value.ToString();
+                    string projectCreater = drProject.Cells[1].Value.ToString();
                     string projectUnit = drProject.Cells[2].Value.ToString();
                     string projectGroup = drProject.Cells[3].Value.ToString();
                     string projectMaster = drProject.Cells[4].Value.ToString();
@@ -363,6 +375,8 @@ namespace ProjectDiff
 
                         if (rate >= txtCheckLine.Value)
                         {
+                            cells.Add(projectUnit);
+                            cells.Add(projectCreater);
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);

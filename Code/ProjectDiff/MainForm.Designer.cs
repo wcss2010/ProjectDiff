@@ -50,11 +50,6 @@
             this.btnLoadWorkers = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kpDiff = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.dgvDiff = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -64,6 +59,13 @@
             this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
+            this.colProjectUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colProjectCreater = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -324,6 +326,8 @@
             this.dgvDiff.AllowUserToAddRows = false;
             this.dgvDiff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colProjectUnit,
+            this.colProjectCreater,
             this.colItemsss6,
             this.colItemsss1,
             this.colItemsss2,
@@ -337,46 +341,6 @@
             this.dgvDiff.TabIndex = 1;
             this.dgvDiff.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvDiff_RowPostPaint);
             this.dgvDiff.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvDiff_RowsAdded);
-            // 
-            // colItemsss6
-            // 
-            this.colItemsss6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss6.HeaderText = "分组";
-            this.colItemsss6.Name = "colItemsss6";
-            this.colItemsss6.ReadOnly = true;
-            this.colItemsss6.Width = 60;
-            // 
-            // colItemsss1
-            // 
-            this.colItemsss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss1.HeaderText = "项目";
-            this.colItemsss1.Name = "colItemsss1";
-            this.colItemsss1.ReadOnly = true;
-            this.colItemsss1.Width = 60;
-            // 
-            // colItemsss2
-            // 
-            this.colItemsss2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss2.HeaderText = "专家";
-            this.colItemsss2.Name = "colItemsss2";
-            this.colItemsss2.ReadOnly = true;
-            this.colItemsss2.Width = 60;
-            // 
-            // colItemsss7
-            // 
-            this.colItemsss7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colItemsss7.HeaderText = "相似度";
-            this.colItemsss7.Name = "colItemsss7";
-            this.colItemsss7.ReadOnly = true;
-            this.colItemsss7.Width = 72;
-            // 
-            // colItemsss3
-            // 
-            this.colItemsss3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colItemsss3.HeaderText = "原因";
-            this.colItemsss3.Name = "colItemsss3";
-            this.colItemsss3.ReadOnly = true;
-            this.colItemsss3.Width = 528;
             // 
             // plButtons3
             // 
@@ -462,6 +426,56 @@
             // 
             this.sfdExcels.FileName = "*.xlsx|*.xlsx";
             // 
+            // colProjectUnit
+            // 
+            this.colProjectUnit.HeaderText = "项目单位";
+            this.colProjectUnit.Name = "colProjectUnit";
+            // 
+            // colProjectCreater
+            // 
+            this.colProjectCreater.HeaderText = "项目申请人";
+            this.colProjectCreater.Name = "colProjectCreater";
+            // 
+            // colItemsss6
+            // 
+            this.colItemsss6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss6.HeaderText = "分组";
+            this.colItemsss6.Name = "colItemsss6";
+            this.colItemsss6.ReadOnly = true;
+            this.colItemsss6.Width = 60;
+            // 
+            // colItemsss1
+            // 
+            this.colItemsss1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss1.HeaderText = "项目";
+            this.colItemsss1.Name = "colItemsss1";
+            this.colItemsss1.ReadOnly = true;
+            this.colItemsss1.Width = 60;
+            // 
+            // colItemsss2
+            // 
+            this.colItemsss2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss2.HeaderText = "专家";
+            this.colItemsss2.Name = "colItemsss2";
+            this.colItemsss2.ReadOnly = true;
+            this.colItemsss2.Width = 60;
+            // 
+            // colItemsss7
+            // 
+            this.colItemsss7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colItemsss7.HeaderText = "相似度";
+            this.colItemsss7.Name = "colItemsss7";
+            this.colItemsss7.ReadOnly = true;
+            this.colItemsss7.Width = 72;
+            // 
+            // colItemsss3
+            // 
+            this.colItemsss3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colItemsss3.HeaderText = "原因";
+            this.colItemsss3.Name = "colItemsss3";
+            this.colItemsss3.ReadOnly = true;
+            this.colItemsss3.Width = 328;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -529,15 +543,17 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnExportTo;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForLike;
+        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown txtCheckLine;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProjectUnit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProjectCreater;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss6;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss7;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForLike;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown txtCheckLine;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
     }
 }
 
