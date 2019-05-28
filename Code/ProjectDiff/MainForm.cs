@@ -137,11 +137,11 @@ namespace ProjectDiff
                     string projectName = drProject.Cells[0].Value.ToString();
                     string projectUnit = drProject.Cells[2].Value.ToString();
                     string projectGroup = drProject.Cells[3].Value.ToString();
-                    string projectMaster = drProject.Cells[4].Value.ToString();
+                    string projectMaster = drProject.Cells[4].Value != null ? (string.IsNullOrEmpty(drProject.Cells[4].Value.ToString()) ? null : drProject.Cells[4].Value.ToString()) : null;
                     string projectWorker1 = drProject.Cells[5].Value.ToString();
                     string projectWorker2 = drProject.Cells[6].Value.ToString();
                     string projectWorker3 = drProject.Cells[7].Value.ToString();
-                                        
+                    
                     if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
                     {
                         List<string> cells = new List<string>();
