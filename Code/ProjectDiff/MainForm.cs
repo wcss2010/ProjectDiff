@@ -152,10 +152,10 @@ namespace ProjectDiff
                         cells.Add(projectName);
                         cells.Add(workerName);
                         cells.Add("100%");
-                        cells.Add("评审专家是责任导师");
+                        cells.Add(workerName + "是责任导师");
                         dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家是责任导师");
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是责任导师");
                     }
                     if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
                     {
@@ -166,10 +166,10 @@ namespace ProjectDiff
                         cells.Add(projectName);
                         cells.Add(workerName);
                         cells.Add("100%");
-                        cells.Add("评审专家是推荐专家");
+                        cells.Add(workerName + "是推荐专家");
                         dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家是推荐专家");
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
                     }
                     if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
                     {
@@ -180,10 +180,10 @@ namespace ProjectDiff
                         cells.Add(projectName);
                         cells.Add(workerName);
                         cells.Add("100%");
-                        cells.Add("评审专家是推荐专家");
+                        cells.Add(workerName + "是推荐专家");
                         dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家是推荐专家");
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
                     }
                     if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
                     {
@@ -194,10 +194,10 @@ namespace ProjectDiff
                         cells.Add(projectName);
                         cells.Add(workerName);
                         cells.Add("100%");
-                        cells.Add("评审专家是推荐专家");
+                        cells.Add(workerName + "是推荐专家");
                         dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家是推荐专家");
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
                     }
                     if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit.Equals(workerUnit))
                     {
@@ -208,10 +208,10 @@ namespace ProjectDiff
                         cells.Add(projectName);
                         cells.Add(workerName);
                         cells.Add("100%");
-                        cells.Add("申请单位与评审专家单位相同");
+                        cells.Add("评审专家与" + workerName + "所在单位相同");
                         dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:申请单位与评审专家单位相同");
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家与" + workerName + "所在单位相同");
                     }
                 }
             }
