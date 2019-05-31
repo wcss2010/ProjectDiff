@@ -150,9 +150,9 @@ namespace ProjectDiff
                         cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add("100%");
+                        cells.Add(workerName);                        
                         cells.Add(workerName + "是责任导师");
+                        cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是责任导师");
@@ -165,8 +165,8 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("100%");
                         cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
@@ -179,8 +179,8 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("100%");
                         cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
@@ -193,8 +193,8 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("100%");
                         cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
@@ -207,8 +207,8 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("100%");
                         cells.Add("评审专家与" + workerName + "所在单位相同");
+                        cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家与" + workerName + "所在单位相同");
@@ -380,8 +380,8 @@ namespace ProjectDiff
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
-                            cells.Add(rate + "%");
                             cells.Add("评审专家单位(" + workerUnit + ")与项目单位(" + projectUnit + ")相似度为" + rate + "%");
+                            cells.Add(rate + "%");
 
                             dgvDiff.Rows.Add(cells.ToArray());
 
