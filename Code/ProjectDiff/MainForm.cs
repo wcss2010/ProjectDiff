@@ -207,7 +207,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("评审专家与" + workerName + "所在单位相同");
+                        cells.Add("评审专家" + workerName + "与申请人" + projectCreater + "所在单位相同");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
