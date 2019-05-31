@@ -71,10 +71,6 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Noear.Weed3">
-      <HintPath>..\..\Lib\Noear.Weed3.dll</HintPath>
-    </Reference>
     <Reference Include="NPOI">
       <HintPath>..\..\Lib\NPOI.dll</HintPath>
     </Reference>
