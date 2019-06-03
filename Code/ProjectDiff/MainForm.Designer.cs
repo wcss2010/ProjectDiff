@@ -58,15 +58,15 @@
             this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnStartForPersonFullUnitLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtCheckLine = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnStartForFull = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
-            this.btnStartForPersonFullUnitLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
             this.nvTabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
@@ -102,7 +102,7 @@
             this.kpProject,
             this.kpWorker,
             this.kpDiff});
-            this.nvTabs.SelectedIndex = 2;
+            this.nvTabs.SelectedIndex = 0;
             this.nvTabs.Size = new System.Drawing.Size(823, 523);
             this.nvTabs.TabIndex = 0;
             this.nvTabs.Text = "kryptonNavigator1";
@@ -165,7 +165,7 @@
             this.colItems3.HeaderText = "单位";
             this.colItems3.Name = "colItems3";
             this.colItems3.ReadOnly = true;
-            this.colItems3.Width = 99;
+            this.colItems3.Width = 98;
             // 
             // colItem4
             // 
@@ -173,7 +173,7 @@
             this.colItem4.HeaderText = "分组";
             this.colItem4.Name = "colItem4";
             this.colItem4.ReadOnly = true;
-            this.colItem4.Width = 92;
+            this.colItem4.Width = 97;
             // 
             // colItem5
             // 
@@ -189,7 +189,7 @@
             this.colItem6.HeaderText = "推荐专家";
             this.colItem6.Name = "colItem6";
             this.colItem6.ReadOnly = true;
-            this.colItem6.Width = 99;
+            this.colItem6.Width = 97;
             // 
             // colItem7
             // 
@@ -205,7 +205,7 @@
             this.colItem8.HeaderText = "推荐专家";
             this.colItem8.Name = "colItem8";
             this.colItem8.ReadOnly = true;
-            this.colItem8.Width = 99;
+            this.colItem8.Width = 97;
             // 
             // plButtons1
             // 
@@ -412,6 +412,26 @@
             this.plButtons3.TabIndex = 0;
             this.plButtons3.Values.Heading = "";
             // 
+            // btnExportTo
+            // 
+            this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExportTo.Location = new System.Drawing.Point(408, 0);
+            this.btnExportTo.Name = "btnExportTo";
+            this.btnExportTo.Size = new System.Drawing.Size(90, 43);
+            this.btnExportTo.TabIndex = 1;
+            this.btnExportTo.Values.Text = "导出到Excel";
+            this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
+            // 
+            // btnStartForPersonFullUnitLike
+            // 
+            this.btnStartForPersonFullUnitLike.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnStartForPersonFullUnitLike.Location = new System.Drawing.Point(498, 0);
+            this.btnStartForPersonFullUnitLike.Name = "btnStartForPersonFullUnitLike";
+            this.btnStartForPersonFullUnitLike.Size = new System.Drawing.Size(132, 43);
+            this.btnStartForPersonFullUnitLike.TabIndex = 5;
+            this.btnStartForPersonFullUnitLike.Values.Text = "专定精确+单元包括";
+            this.btnStartForPersonFullUnitLike.Click += new System.EventHandler(this.btnStartForPersonFullUnitLike_Click);
+            // 
             // kryptonLabel2
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(193, 10);
@@ -440,16 +460,6 @@
             0,
             0});
             // 
-            // btnExportTo
-            // 
-            this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExportTo.Location = new System.Drawing.Point(408, 0);
-            this.btnExportTo.Name = "btnExportTo";
-            this.btnExportTo.Size = new System.Drawing.Size(90, 43);
-            this.btnExportTo.TabIndex = 1;
-            this.btnExportTo.Values.Text = "导出到Excel";
-            this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
-            // 
             // btnStartForFull
             // 
             this.btnStartForFull.Dock = System.Windows.Forms.DockStyle.Right;
@@ -477,16 +487,6 @@
             // sfdExcels
             // 
             this.sfdExcels.FileName = "*.xlsx|*.xlsx";
-            // 
-            // btnStartForPersonFullUnitLike
-            // 
-            this.btnStartForPersonFullUnitLike.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnStartForPersonFullUnitLike.Location = new System.Drawing.Point(498, 0);
-            this.btnStartForPersonFullUnitLike.Name = "btnStartForPersonFullUnitLike";
-            this.btnStartForPersonFullUnitLike.Size = new System.Drawing.Size(132, 43);
-            this.btnStartForPersonFullUnitLike.TabIndex = 5;
-            this.btnStartForPersonFullUnitLike.Values.Text = "专定精确+单元包括";
-            this.btnStartForPersonFullUnitLike.Click += new System.EventHandler(this.btnStartForPersonFullUnitLike_Click);
             // 
             // MainForm
             // 

@@ -473,7 +473,7 @@ namespace ProjectDiff
 
                         WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
                     }
-                    if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && (projectUnit.Contains(workerUnit) || workerUnit.Contains(projectUnit)))
+                    if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit != workerUnit && (projectUnit.Contains(workerUnit) || workerUnit.Contains(projectUnit)))
                     {
                         List<string> cells = new List<string>();
                         cells.Add(projectUnit);
