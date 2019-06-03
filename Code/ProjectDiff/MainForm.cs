@@ -396,5 +396,101 @@ namespace ProjectDiff
 
             MessageBox.Show("比对完成！");
         }
+
+        private void btnStartForPersonFullUnitLike_Click(object sender, EventArgs e)
+        {
+            dgvDiff.Rows.Clear();
+            foreach (DataGridViewRow drWorker in dgvWorkers.Rows)
+            {
+                string workerName = drWorker.Cells[0].Value.ToString();
+                string workerUnit = drWorker.Cells[1].Value.ToString();
+                string workerGroup = drWorker.Cells[2].Value.ToString();
+
+                foreach (DataGridViewRow drProject in dgvProjects.Rows)
+                {
+                    string projectName = drProject.Cells[0].Value.ToString();
+                    string projectCreater = drProject.Cells[1].Value.ToString();
+                    string projectUnit = drProject.Cells[2].Value.ToString();
+                    string projectGroup = drProject.Cells[3].Value.ToString();
+                    string projectMaster = drProject.Cells[4].Value != null ? (string.IsNullOrEmpty(drProject.Cells[4].Value.ToString()) ? null : drProject.Cells[4].Value.ToString()) : null;
+                    string projectWorker1 = drProject.Cells[5].Value.ToString();
+                    string projectWorker2 = drProject.Cells[6].Value.ToString();
+                    string projectWorker3 = drProject.Cells[7].Value.ToString();
+
+                    if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
+                    {
+                        List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add(workerName + "是责任导师");
+                        cells.Add("100%");
+                        dgvDiff.Rows.Add(cells.ToArray());
+
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是责任导师");
+                    }
+                    if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
+                    {
+                        List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
+                        dgvDiff.Rows.Add(cells.ToArray());
+
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    }
+                    if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
+                    {
+                        List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
+                        dgvDiff.Rows.Add(cells.ToArray());
+
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    }
+                    if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
+                    {
+                        List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add(workerName + "是推荐专家");
+                        cells.Add("100%");
+                        dgvDiff.Rows.Add(cells.ToArray());
+
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    }
+                    if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && (projectUnit.Contains(workerUnit) || workerUnit.Contains(projectUnit)))
+                    {
+                        List<string> cells = new List<string>();
+                        cells.Add(projectUnit);
+                        cells.Add(projectCreater);
+                        cells.Add(projectGroup);
+                        cells.Add(projectName);
+                        cells.Add(workerName);
+                        cells.Add("评审专家(" + workerName + ")的单位(" + workerUnit + ")与申请人(" + projectCreater + ")的单位(" + projectUnit + ")关系需要核实");
+                        cells.Add("100%");
+                        dgvDiff.Rows.Add(cells.ToArray());
+
+                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:评审专家与" + workerName + "关系需要核实");
+                    }
+                }
+            }
+            dgvDiff.Sort(colItemsss1, ListSortDirection.Descending);
+            MessageBox.Show("比对完成！");
+        }
     }
 }
