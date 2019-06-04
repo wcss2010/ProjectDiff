@@ -417,62 +417,62 @@ namespace ProjectDiff
                     string projectWorker2 = drProject.Cells[6].Value.ToString();
                     string projectWorker3 = drProject.Cells[7].Value.ToString();
 
-                    if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
-                    {
-                        List<string> cells = new List<string>();
-                        cells.Add(projectUnit);
-                        cells.Add(projectCreater);
-                        cells.Add(projectGroup);
-                        cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add(workerName + "是责任导师");
-                        cells.Add("100%");
-                        dgvDiff.Rows.Add(cells.ToArray());
+                    //if (projectMaster != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectMaster.Equals(workerName))
+                    //{
+                    //    List<string> cells = new List<string>();
+                    //    cells.Add(projectUnit);
+                    //    cells.Add(projectCreater);
+                    //    cells.Add(projectGroup);
+                    //    cells.Add(projectName);
+                    //    cells.Add(workerName);
+                    //    cells.Add(workerName + "是责任导师");
+                    //    cells.Add("100%");
+                    //    dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是责任导师");
-                    }
-                    if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
-                    {
-                        List<string> cells = new List<string>();
-                        cells.Add(projectUnit);
-                        cells.Add(projectCreater);
-                        cells.Add(projectGroup);
-                        cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
-                        cells.Add("100%");
-                        dgvDiff.Rows.Add(cells.ToArray());
+                    //    WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是责任导师");
+                    //}
+                    //if (projectWorker1 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker1.Equals(workerName))
+                    //{
+                    //    List<string> cells = new List<string>();
+                    //    cells.Add(projectUnit);
+                    //    cells.Add(projectCreater);
+                    //    cells.Add(projectGroup);
+                    //    cells.Add(projectName);
+                    //    cells.Add(workerName);
+                    //    cells.Add(workerName + "是推荐专家");
+                    //    cells.Add("100%");
+                    //    dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
-                    }
-                    if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
-                    {
-                        List<string> cells = new List<string>();
-                        cells.Add(projectUnit);
-                        cells.Add(projectCreater);
-                        cells.Add(projectGroup);
-                        cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
-                        cells.Add("100%");
-                        dgvDiff.Rows.Add(cells.ToArray());
+                    //    WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    //}
+                    //if (projectWorker2 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker2.Equals(workerName))
+                    //{
+                    //    List<string> cells = new List<string>();
+                    //    cells.Add(projectUnit);
+                    //    cells.Add(projectCreater);
+                    //    cells.Add(projectGroup);
+                    //    cells.Add(projectName);
+                    //    cells.Add(workerName);
+                    //    cells.Add(workerName + "是推荐专家");
+                    //    cells.Add("100%");
+                    //    dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
-                    }
-                    if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
-                    {
-                        List<string> cells = new List<string>();
-                        cells.Add(projectUnit);
-                        cells.Add(projectCreater);
-                        cells.Add(projectGroup);
-                        cells.Add(projectName);
-                        cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
-                        cells.Add("100%");
-                        dgvDiff.Rows.Add(cells.ToArray());
+                    //    WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    //}
+                    //if (projectWorker3 != null && workerName != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectWorker3.Equals(workerName))
+                    //{
+                    //    List<string> cells = new List<string>();
+                    //    cells.Add(projectUnit);
+                    //    cells.Add(projectCreater);
+                    //    cells.Add(projectGroup);
+                    //    cells.Add(projectName);
+                    //    cells.Add(workerName);
+                    //    cells.Add(workerName + "是推荐专家");
+                    //    cells.Add("100%");
+                    //    dgvDiff.Rows.Add(cells.ToArray());
 
-                        WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
-                    }
+                    //    WriteLog("Group:" + projectGroup + ",Project:" + projectName + ",Worker:" + workerName + ",Result:" + workerName + "是推荐专家");
+                    //}
                     if (projectUnit != null && workerUnit != null && projectGroup != null && workerGroup != null && projectGroup.Equals(workerGroup) && projectUnit != workerUnit && (projectUnit.Contains(workerUnit) || workerUnit.Contains(projectUnit)))
                     {
                         List<string> cells = new List<string>();

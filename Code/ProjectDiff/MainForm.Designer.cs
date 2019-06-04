@@ -415,7 +415,7 @@
             // btnExportTo
             // 
             this.btnExportTo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExportTo.Location = new System.Drawing.Point(408, 0);
+            this.btnExportTo.Location = new System.Drawing.Point(469, 0);
             this.btnExportTo.Name = "btnExportTo";
             this.btnExportTo.Size = new System.Drawing.Size(90, 43);
             this.btnExportTo.TabIndex = 1;
@@ -425,11 +425,11 @@
             // btnStartForPersonFullUnitLike
             // 
             this.btnStartForPersonFullUnitLike.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnStartForPersonFullUnitLike.Location = new System.Drawing.Point(498, 0);
+            this.btnStartForPersonFullUnitLike.Location = new System.Drawing.Point(559, 0);
             this.btnStartForPersonFullUnitLike.Name = "btnStartForPersonFullUnitLike";
-            this.btnStartForPersonFullUnitLike.Size = new System.Drawing.Size(132, 43);
+            this.btnStartForPersonFullUnitLike.Size = new System.Drawing.Size(71, 43);
             this.btnStartForPersonFullUnitLike.TabIndex = 5;
-            this.btnStartForPersonFullUnitLike.Values.Text = "专定精确+单元包括";
+            this.btnStartForPersonFullUnitLike.Values.Text = "单位包含";
             this.btnStartForPersonFullUnitLike.Click += new System.EventHandler(this.btnStartForPersonFullUnitLike_Click);
             // 
             // kryptonLabel2
