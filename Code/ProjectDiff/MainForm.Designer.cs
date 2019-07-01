@@ -28,77 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nvTabs = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
-            this.kpProject = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.dgvProjects = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.colItem1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItems3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem4 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem5 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItem8 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.plButtons1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btmLoadProjects = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kpWorker = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.dgvWorkers = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.colItemss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.plButtons2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btnLoadWorkers = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kpDiff = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.dgvDiff = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.nvTabs = new System.Windows.Forms.TabControl();
+            this.kpProject = new System.Windows.Forms.TabPage();
+            this.dgvProjects = new System.Windows.Forms.DataGridView();
+            this.colItem1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItems3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plButtons1 = new System.Windows.Forms.GroupBox();
+            this.btmLoadProjects = new System.Windows.Forms.Button();
+            this.kpWorker = new System.Windows.Forms.TabPage();
+            this.dgvWorkers = new System.Windows.Forms.DataGridView();
+            this.colItemss1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemss2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemss3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plButtons2 = new System.Windows.Forms.GroupBox();
+            this.btnLoadWorkers = new System.Windows.Forms.Button();
+            this.kpDiff = new System.Windows.Forms.TabPage();
+            this.dgvDiff = new System.Windows.Forms.DataGridView();
             this.colProjectUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colProjectCreater = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colItemsss6 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colItemsss7 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.plButtons3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.btnExportTo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnStartForPersonFullUnitLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.txtCheckLine = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.btnStartForFull = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnStartForLike = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.colItemsss6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemsss1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemsss2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemsss3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItemsss7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plButtons3 = new System.Windows.Forms.GroupBox();
+            this.btnExportTo = new System.Windows.Forms.Button();
+            this.btnStartForPersonFullUnitLike = new System.Windows.Forms.Button();
+            this.kryptonLabel2 = new System.Windows.Forms.Label();
+            this.kryptonLabel1 = new System.Windows.Forms.Label();
+            this.txtCheckLine = new System.Windows.Forms.NumericUpDown();
+            this.btnStartForFull = new System.Windows.Forms.Button();
+            this.btnStartForLike = new System.Windows.Forms.Button();
             this.ofdExcels = new System.Windows.Forms.OpenFileDialog();
             this.sfdExcels = new System.Windows.Forms.SaveFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).BeginInit();
-            this.nvTabs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kpProject)).BeginInit();
-            this.kpProject.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjects)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons1.Panel)).BeginInit();
-            this.plButtons1.Panel.SuspendLayout();
-            this.plButtons1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kpWorker)).BeginInit();
-            this.kpWorker.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons2.Panel)).BeginInit();
-            this.plButtons2.Panel.SuspendLayout();
-            this.plButtons2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kpDiff)).BeginInit();
-            this.kpDiff.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons3.Panel)).BeginInit();
-            this.plButtons3.Panel.SuspendLayout();
-            this.plButtons3.SuspendLayout();
             this.SuspendLayout();
             // 
             // nvTabs
             // 
-            this.nvTabs.Button.CloseButtonDisplay = ComponentFactory.Krypton.Navigator.ButtonDisplay.Hide;
             this.nvTabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nvTabs.Location = new System.Drawing.Point(0, 0);
             this.nvTabs.Name = "nvTabs";
-            this.nvTabs.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
+            this.nvTabs.TabPages.AddRange(new System.Windows.Forms.TabPage[] {
             this.kpProject,
             this.kpWorker,
             this.kpDiff});
@@ -109,17 +85,12 @@
             // 
             // kpProject
             // 
-            this.kpProject.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kpProject.Controls.Add(this.dgvProjects);
             this.kpProject.Controls.Add(this.plButtons1);
-            this.kpProject.Flags = 65534;
-            this.kpProject.LastVisibleSet = true;
             this.kpProject.MinimumSize = new System.Drawing.Size(50, 50);
             this.kpProject.Name = "kpProject";
             this.kpProject.Size = new System.Drawing.Size(821, 496);
             this.kpProject.Text = "项目汇总";
-            this.kpProject.ToolTipTitle = "Page ToolTip";
-            this.kpProject.UniqueName = "99520EB0D9264031FABAF4552A8C1428";
             // 
             // dgvProjects
             // 
@@ -215,10 +186,9 @@
             // 
             // plButtons1.Panel
             // 
-            this.plButtons1.Panel.Controls.Add(this.btmLoadProjects);
+            this.plButtons1.Controls.Add(this.btmLoadProjects);
             this.plButtons1.Size = new System.Drawing.Size(821, 49);
             this.plButtons1.TabIndex = 2;
-            this.plButtons1.Values.Heading = "";
             // 
             // btmLoadProjects
             // 
@@ -227,22 +197,17 @@
             this.btmLoadProjects.Name = "btmLoadProjects";
             this.btmLoadProjects.Size = new System.Drawing.Size(111, 43);
             this.btmLoadProjects.TabIndex = 0;
-            this.btmLoadProjects.Values.Text = "载入项目信息";
+            this.btmLoadProjects.Text = "载入项目信息";
             this.btmLoadProjects.Click += new System.EventHandler(this.btmLoadProjects_Click);
             // 
             // kpWorker
             // 
-            this.kpWorker.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kpWorker.Controls.Add(this.dgvWorkers);
             this.kpWorker.Controls.Add(this.plButtons2);
-            this.kpWorker.Flags = 65534;
-            this.kpWorker.LastVisibleSet = true;
             this.kpWorker.MinimumSize = new System.Drawing.Size(50, 50);
             this.kpWorker.Name = "kpWorker";
             this.kpWorker.Size = new System.Drawing.Size(821, 496);
             this.kpWorker.Text = "评审专家信息";
-            this.kpWorker.ToolTipTitle = "Page ToolTip";
-            this.kpWorker.UniqueName = "C433756FA1B5481A3D9643875B24FA6A";
             // 
             // dgvWorkers
             // 
@@ -293,10 +258,9 @@
             // 
             // plButtons2.Panel
             // 
-            this.plButtons2.Panel.Controls.Add(this.btnLoadWorkers);
+            this.plButtons2.Controls.Add(this.btnLoadWorkers);
             this.plButtons2.Size = new System.Drawing.Size(821, 49);
             this.plButtons2.TabIndex = 2;
-            this.plButtons2.Values.Heading = "";
             // 
             // btnLoadWorkers
             // 
@@ -305,22 +269,17 @@
             this.btnLoadWorkers.Name = "btnLoadWorkers";
             this.btnLoadWorkers.Size = new System.Drawing.Size(90, 43);
             this.btnLoadWorkers.TabIndex = 0;
-            this.btnLoadWorkers.Values.Text = "载入专家信息";
+            this.btnLoadWorkers.Text = "载入专家信息";
             this.btnLoadWorkers.Click += new System.EventHandler(this.btnLoadWorkers_Click);
             // 
             // kpDiff
             // 
-            this.kpDiff.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kpDiff.Controls.Add(this.dgvDiff);
             this.kpDiff.Controls.Add(this.plButtons3);
-            this.kpDiff.Flags = 65534;
-            this.kpDiff.LastVisibleSet = true;
             this.kpDiff.MinimumSize = new System.Drawing.Size(50, 50);
             this.kpDiff.Name = "kpDiff";
             this.kpDiff.Size = new System.Drawing.Size(821, 496);
             this.kpDiff.Text = "功能比对";
-            this.kpDiff.ToolTipTitle = "Page ToolTip";
-            this.kpDiff.UniqueName = "26E920A4234742D5F6980439F1F5717B";
             // 
             // dgvDiff
             // 
@@ -401,16 +360,15 @@
             // 
             // plButtons3.Panel
             // 
-            this.plButtons3.Panel.Controls.Add(this.btnExportTo);
-            this.plButtons3.Panel.Controls.Add(this.btnStartForPersonFullUnitLike);
-            this.plButtons3.Panel.Controls.Add(this.kryptonLabel2);
-            this.plButtons3.Panel.Controls.Add(this.kryptonLabel1);
-            this.plButtons3.Panel.Controls.Add(this.txtCheckLine);
-            this.plButtons3.Panel.Controls.Add(this.btnStartForFull);
-            this.plButtons3.Panel.Controls.Add(this.btnStartForLike);
+            this.plButtons3.Controls.Add(this.btnExportTo);
+            this.plButtons3.Controls.Add(this.btnStartForPersonFullUnitLike);
+            this.plButtons3.Controls.Add(this.kryptonLabel2);
+            this.plButtons3.Controls.Add(this.kryptonLabel1);
+            this.plButtons3.Controls.Add(this.txtCheckLine);
+            this.plButtons3.Controls.Add(this.btnStartForFull);
+            this.plButtons3.Controls.Add(this.btnStartForLike);
             this.plButtons3.Size = new System.Drawing.Size(821, 49);
             this.plButtons3.TabIndex = 0;
-            this.plButtons3.Values.Heading = "";
             // 
             // btnExportTo
             // 
@@ -419,7 +377,7 @@
             this.btnExportTo.Name = "btnExportTo";
             this.btnExportTo.Size = new System.Drawing.Size(90, 43);
             this.btnExportTo.TabIndex = 1;
-            this.btnExportTo.Values.Text = "导出到Excel";
+            this.btnExportTo.Text = "导出到Excel";
             this.btnExportTo.Click += new System.EventHandler(this.btnExportTo_Click);
             // 
             // btnStartForPersonFullUnitLike
@@ -429,7 +387,7 @@
             this.btnStartForPersonFullUnitLike.Name = "btnStartForPersonFullUnitLike";
             this.btnStartForPersonFullUnitLike.Size = new System.Drawing.Size(71, 43);
             this.btnStartForPersonFullUnitLike.TabIndex = 5;
-            this.btnStartForPersonFullUnitLike.Values.Text = "单位包含";
+            this.btnStartForPersonFullUnitLike.Text = "单位包含";
             this.btnStartForPersonFullUnitLike.Click += new System.EventHandler(this.btnStartForPersonFullUnitLike_Click);
             // 
             // kryptonLabel2
@@ -438,7 +396,7 @@
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(21, 20);
             this.kryptonLabel2.TabIndex = 4;
-            this.kryptonLabel2.Values.Text = "%";
+            this.kryptonLabel2.Text = "%";
             // 
             // kryptonLabel1
             // 
@@ -446,7 +404,7 @@
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(135, 20);
             this.kryptonLabel1.TabIndex = 4;
-            this.kryptonLabel1.Values.Text = "模糊匹配相似度阀值：";
+            this.kryptonLabel1.Text = "模糊匹配相似度阀值：";
             // 
             // txtCheckLine
             // 
@@ -467,7 +425,7 @@
             this.btnStartForFull.Name = "btnStartForFull";
             this.btnStartForFull.Size = new System.Drawing.Size(97, 43);
             this.btnStartForFull.TabIndex = 0;
-            this.btnStartForFull.Values.Text = "全部精确匹配";
+            this.btnStartForFull.Text = "全部精确匹配";
             this.btnStartForFull.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStartForLike
@@ -477,7 +435,7 @@
             this.btnStartForLike.Name = "btnStartForLike";
             this.btnStartForLike.Size = new System.Drawing.Size(90, 43);
             this.btnStartForLike.TabIndex = 2;
-            this.btnStartForLike.Values.Text = "单位模糊匹配";
+            this.btnStartForLike.Text = "单位模糊匹配";
             this.btnStartForLike.Click += new System.EventHandler(this.btnStartForLike_Click);
             // 
             // ofdExcels
@@ -498,75 +456,49 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "专家信息比对  ";
-            ((System.ComponentModel.ISupportInitialize)(this.nvTabs)).EndInit();
-            this.nvTabs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kpProject)).EndInit();
-            this.kpProject.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjects)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons1.Panel)).EndInit();
-            this.plButtons1.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons1)).EndInit();
-            this.plButtons1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kpWorker)).EndInit();
-            this.kpWorker.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons2.Panel)).EndInit();
-            this.plButtons2.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons2)).EndInit();
-            this.plButtons2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kpDiff)).EndInit();
-            this.kpDiff.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons3.Panel)).EndInit();
-            this.plButtons3.Panel.ResumeLayout(false);
-            this.plButtons3.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.plButtons3)).EndInit();
-            this.plButtons3.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
 
-        private ComponentFactory.Krypton.Navigator.KryptonNavigator nvTabs;
-        private ComponentFactory.Krypton.Navigator.KryptonPage kpProject;
-        private ComponentFactory.Krypton.Navigator.KryptonPage kpWorker;
-        private ComponentFactory.Krypton.Navigator.KryptonPage kpDiff;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvDiff;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox plButtons3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForFull;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvWorkers;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox plButtons2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnLoadWorkers;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvProjects;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox plButtons1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btmLoadProjects;
+        private System.Windows.Forms.TabControl nvTabs;
+        private System.Windows.Forms.TabPage kpProject;
+        private System.Windows.Forms.TabPage kpWorker;
+        private System.Windows.Forms.TabPage kpDiff;
+        private System.Windows.Forms.DataGridView dgvDiff;
+        private System.Windows.Forms.GroupBox plButtons3;
+        private System.Windows.Forms.Button btnStartForFull;
+        private System.Windows.Forms.DataGridView dgvWorkers;
+        private System.Windows.Forms.GroupBox plButtons2;
+        private System.Windows.Forms.Button btnLoadWorkers;
+        private System.Windows.Forms.DataGridView dgvProjects;
+        private System.Windows.Forms.GroupBox plButtons1;
+        private System.Windows.Forms.Button btmLoadProjects;
         private System.Windows.Forms.OpenFileDialog ofdExcels;
         private System.Windows.Forms.SaveFileDialog sfdExcels;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItems3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem4;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem5;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem6;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem7;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItem8;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemss3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnExportTo;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForLike;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown txtCheckLine;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItems3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemss1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemss2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemss3;
+        private System.Windows.Forms.Button btnExportTo;
+        private System.Windows.Forms.Button btnStartForLike;
+        private System.Windows.Forms.NumericUpDown txtCheckLine;
+        private System.Windows.Forms.Label kryptonLabel1;
+        private System.Windows.Forms.Label kryptonLabel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colProjectUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colProjectCreater;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss6;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colItemsss7;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStartForPersonFullUnitLike;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemsss6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemsss1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemsss2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemsss3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItemsss7;
+        private System.Windows.Forms.Button btnStartForPersonFullUnitLike;
     }
 }
-

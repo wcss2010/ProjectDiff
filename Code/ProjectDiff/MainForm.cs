@@ -6,12 +6,11 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 using ProjectDiff.Util;
 
 namespace ProjectDiff
 {
-    public partial class MainForm : KryptonForm
+    public partial class MainForm : Form
     {
         public MainForm()
         {
