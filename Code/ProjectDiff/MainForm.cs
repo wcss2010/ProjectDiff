@@ -149,8 +149,8 @@ namespace ProjectDiff
                         cells.Add(projectCreater);
                         cells.Add(projectGroup);
                         cells.Add(projectName);
-                        cells.Add(workerName);                        
-                        cells.Add(workerName + "是责任导师");
+                        cells.Add(workerName);
+                        cells.Add(workerName + "是责任导师.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
@@ -164,7 +164,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
+                        cells.Add(workerName + "是推荐专家.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
@@ -178,7 +178,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
+                        cells.Add(workerName + "是推荐专家.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
@@ -192,7 +192,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add(workerName + "是推荐专家");
+                        cells.Add(workerName + "是推荐专家.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
@@ -206,7 +206,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("评审专家" + workerName + "与申请人" + projectCreater + "所在单位相同");
+                        cells.Add("评审专家" + workerName + "与申请人" + projectCreater + "所在单位相同.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
@@ -379,7 +379,7 @@ namespace ProjectDiff
                             cells.Add(projectGroup);
                             cells.Add(projectName);
                             cells.Add(workerName);
-                            cells.Add("评审专家单位(" + workerUnit + ")与项目单位(" + projectUnit + ")相似度为" + rate + "%");
+                            cells.Add("评审专家单位(" + workerUnit + ")与项目单位(" + projectUnit + ")相似度为" + rate + "%.");
                             cells.Add(rate + "%");
 
                             dgvDiff.Rows.Add(cells.ToArray());
@@ -480,7 +480,7 @@ namespace ProjectDiff
                         cells.Add(projectGroup);
                         cells.Add(projectName);
                         cells.Add(workerName);
-                        cells.Add("评审专家(" + workerName + ")的单位(" + workerUnit + ")与申请人(" + projectCreater + ")的单位(" + projectUnit + ")关系需要核实");
+                        cells.Add("评审专家(" + workerName + ")的单位(" + workerUnit + ")与申请人(" + projectCreater + ")的单位(" + projectUnit + ")关系需要核实.");
                         cells.Add("100%");
                         dgvDiff.Rows.Add(cells.ToArray());
 
